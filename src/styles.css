@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins";
+}
+
+.container-Colaboradores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-Colaboradores-dark {
+    background-color: #111827;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-colaboradores {
+    font-size: 3rem;
+}
+
+.title-colaboradores-dark {
+    color: #A1A3A7;
+    font-size: 3rem;
+}
+
+.carrossel-colaboradores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  gap: 2rem;
+  overflow: hidden; 
+  background-color: white;
+  padding: 1.5rem 0;
+  white-space: nowrap; /* Impede que os cards quebrem de linha */
+}
+
+.card-colaboradores {
+  position: relative;
+  height: auto;
+  width: 780px; /* Largura fixa para os cards */
+  flex-shrink: 0; /* Impede que os cards diminuam */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  padding: 1.5rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 4px 16px 0px rgba(0,0,0,0.25);
+  cursor: pointer;
+  animation: moveCard 10s linear infinite;/*  Aplicando animação individualmente nos cards */
+  transition: transform 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito de hover que levanta o card */
+.card-colaboradores:hover {
+  background-color: #e0e5eb;
+  transform: translateY(-25px); /* Levanta o card */
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação que move os cards */
+@keyframes moveCard {
+  0% {
+      transform: translateX(0); /* Começa no ponto de origem */
+  }
+  100% {
+      transform: translateX(-100%); /* Move o card para fora do contêiner */
+  }
+}
+
+.card-colaboradores p {
+    margin-top: 1rem;
+    font-size: 1rem; /* Ajuste o tamanho da fonte */
+    color: #333;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.text-colaboradores {
+    text-align: center;
+    padding: 0 3.5rem;
+}
+
+.foto-colocaboradores {
+    width: 163px;
+    height: 140px;
+    margin-top: -5.5rem;
+}
+
+@media (min-width: 768px) {
+    .card-colaboradores {
+        width: 580px;
+        padding: 0.5rem 0;
+    }
+    .foto-colocaboradores {
+        width: 123px;
+        height: 100px;
+        margin-top: -3.5rem;
+    }
+}
+
+@media (min-width: 320px) {
+    .card-colaboradores {
+        width: 380px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: relative;
+  }
+
+  footer-dark {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .footer-logo {
+    position: absolute;
+    left: 20px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  .container-text-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .container-text-footer p {
+    margin: 5px 0;
+  }
+
+  @media (min-width: 768px) {
+    footer {
+      flex-direction: column; /* Empilha os elementos */
+      align-items: center; /* Centraliza os elementos horizontalmente */
+    }
+  
+    .footer-logo {
+      margin-top: 2.5rem;
+      margin-right: 0; /* Remove espaço lateral quando empilhado */
+      position: static; /* Reseta o posicionamento absoluto */
+    }
+    .container-text-footer p {
+        margin: 0;
+    }
+  }
+
+  @media (min-width: 320px) {
+    footer {
+      flex-direction: column; /* Empilha os elementos */
+      align-items: center; /* Centraliza os elementos horizontalmente */
+    }
+  
+    .footer-logo {
+      margin-top: 2.5rem;
+      margin-right: 0;
+      position: static;
+    }
+    .container-text-footer p {
+        margin: 0;
+    }
+  }
+
+.container-Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E2E2;
+    padding: 2.5rem 0;
+}
+
+.container-Icons-dark {
+    background-color: #030712;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.container-Icons img {
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.container-Icons-dark img {
+    fill: #595A5A;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .container-Icons {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (min-width: 320px) {
+    .container-Icons {
+        padding: 0.5rem 0;
+    }
+}
