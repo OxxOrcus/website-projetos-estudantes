@@ -1,0 +1,67 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Page border */
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* Blur section */
+#tool-languages {
+  background-color: #111827;;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Tittle alignment in the section */
+#tool-languages .tittle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/* Tittle color and fonts size */
+#tool-languages .tittle h2 {
+  padding: 11px;
+  color: #a1a3a7;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/* Icons alignment in the section */
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 100px;
+}
+
+/* Name to Icons alignment in the section */
+.icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .icons {
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .icons p {
+    font-size: 12px;
+  }
+
+  #tool-languages .tittle h2 {
+    font-size: 1.8rem;/
+  }
+}
