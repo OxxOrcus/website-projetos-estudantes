@@ -1,0 +1,363 @@
+h1{
+  text-align: center;
+  color: #333333; 
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+}
+
+.search-projects{
+  background-color: #f4f4f4; 
+  margin: 0;
+  padding-right: 20px;
+}
+
+.search-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+}
+
+.search-wrapper {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  background-color: #e2e8f0; 
+  border-radius: 30px;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+  width: 250px; 
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  color: #333333; 
+  font-size: 16px;
+  padding: 10px 15px;
+  outline: none;
+  width: 100%; 
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  padding-right: 40px; 
+}
+
+.search-icon {
+  position: absolute; 
+  right: 15px; 
+  color: #333333; 
+  width: 20px;
+  height: 23px;
+  background-color: #e2e8f0;
+}
+
+.search-wrapper:hover {
+  transform: scale(1.05); 
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9fafb; 
+}
+
+.project1, .project2, .project3 {
+  margin-bottom: 20px;
+  background-color: #e2e8f0; 
+  border-radius: 20px;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.project1:hover, .project2:hover, .project3:hover {
+  background-color: #d1d5db; 
+  transform: translateY(10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.project-title {
+  font-size: 20px;
+  color: #333333; 
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 14px;
+  color: #333333; 
+  text-align: center;
+  padding: 18px;
+}
+
+.image1 {
+  width: 97%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 250px;
+  background-size: auto;
+  margin-top: 5px;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  gap: 30px;
+}
+
+.language-image {
+  width: 20%;
+  height: 20%;
+}
+
+@media (min-width: 800px) {
+  .projects {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  .project1 {
+    width: 50vw;
+    margin: 250px;
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0.8;
+    margin-bottom: 200px;
+  }
+
+  .project2 {
+    width: 60vw;
+    margin-top: 120px;
+    position: absolute;
+    top: 40px;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    flex-direction: row;
+    display: flex;
+    opacity: 0.9;
+    margin-bottom: 500px;
+  }
+
+  .project3 {
+    width: 80%;
+    position: relative;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 300px;
+  }
+  
+  .project1:hover, .project2:hover, .project3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .image1 {
+    height: 300px;
+    width: 300px;
+  }
+
+  #imageone.image1 {
+    height: 290px;
+    width: 200px;
+  }
+
+  #imagetwo.image1 {
+    width: 250px;
+  }
+
+  .languages {
+    gap: 50px;
+  }
+
+  .language-image {
+    width: 50px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 935px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 80%;
+  }
+
+  .project1 {
+    width: 78vw;
+    margin: 270px;
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0.8;
+  }
+
+  .project2 {
+    width: 85vw;
+    margin-top: 120px;
+    position: absolute;
+    top: 40px;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    flex-direction: row;
+    display: flex;
+    opacity: 0.9;
+  }
+
+  .project3 {
+    width: 90vw;
+    position: relative;
+    margin-bottom: 300px;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .project1:hover, .project2:hover, .project3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .image1 {
+    height: 300px;
+    width: 350px;
+  }
+
+  #imageone.image1 {
+    height: 280px;
+    width: 250px;
+  }
+
+  #imagetwo.image1 {
+    width: 300px;
+  }
+
+  .languages {
+    gap: 50px;
+  }
+
+  .language-image {
+    width: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .project1 {
+    width: 30vw;
+    margin: 250px;
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0.8;
+  }
+
+  .project2 {
+    width: 40vw;
+    margin-top: 120px;
+    position: absolute;
+    top: 40px;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    flex-direction: row;
+    display: flex;
+    opacity: 0.9;
+  }
+
+  .project3 {
+    width: 50%;
+    position: relative;
+    margin-bottom: 300px;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .project1:hover, .project2:hover, .project3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-title {
+    font-size: 24px;
+  }
+
+  .image1 {
+    height: 300px;
+    width: 300px;
+  }
+
+  #imageone.image1 {
+    height: 290px;
+    width: 200px;
+  }
+
+  #imagetwo.image1 {
+    width: 250px;
+  }
+
+  .languages {
+    gap: 50px;
+  }
+
+  .language-image {
+    width: 50px;
+  }
+}
