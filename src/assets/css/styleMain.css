@@ -1,0 +1,137 @@
+* { 
+    margin: 0;
+    padding: 0;
+  }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo span {
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: black;
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.controls .cv-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-section {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    text-align: left;
+    background-color: #e0e0e0;
+}
+
+.about-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-content h1 span {
+    color: #000;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 90%;
+    margin-left: -15px;
+}
+
+.contact-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+
+}
+
+.social-links li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+
+}
+
+.social-links li p {
+    margin-bottom: 1px;
+}
+
+.social-links li img{
+    padding-top: 2px;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.about-image img {
+    margin-bottom: 65px;
+    margin-right: 80px;
+    max-width: 280px;
+    border: 5px solid white;
+    box-shadow: 35px 35px 0 black;
+}
